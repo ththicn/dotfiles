@@ -1,1 +1,5 @@
 # dotfile
+
+```bash
+make all
+```
