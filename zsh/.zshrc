@@ -2,12 +2,12 @@
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Set Alias
-alias ls='exa'
-alias la='exa -a'
-alias ll='exa -l'
-alias l1='exa -1'
-alias lal='exa -al'
-alias lt='exa -T'
+alias ls='ls --color=auto'
+alias la='ls --color=auto -a'
+alias ll='ls --color=auto -l'
+alias l1='ls --color=auto -1'
+alias lal='ls --color=auto -al'
+alias lt='ls --color=auto -T'
 alias python='/opt/homebrew/bin/python3.11'
 alias cat='bat'
 

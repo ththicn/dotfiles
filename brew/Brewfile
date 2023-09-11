@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 brew "bat"
-brew "exa"
 brew "fd"
 brew "fzf"
 brew "gh"
