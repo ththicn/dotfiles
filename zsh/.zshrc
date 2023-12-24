@@ -26,7 +26,7 @@ bindkey '^r' select-history
 
 # ghq + fzf
 function ghq-fzf() {
-  local src=$(ghq list -p | fzf --reverse --height=~50%)
+  local src=$(ghq list | fzf --reverse --height=~50%)
   if [ -n "$src" ]; then
     BUFFER="cd $(ghq root)/$src"
     zle accept-line
@@ -62,3 +62,6 @@ if [ -f '/Users/ththicn/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ththicn
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ththicn/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ththicn/google-cloud-sdk/completion.zsh.inc'; fi
+
+# activate rtx
+eval "$(rtx activate zsh)"
