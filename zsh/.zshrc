@@ -63,5 +63,5 @@ if [ -f '/Users/ththicn/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ththicn
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ththicn/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ththicn/google-cloud-sdk/completion.zsh.inc'; fi
 
-# activate rtx
-eval "$(rtx activate zsh)"
+# activate mise
+eval "$(mise activate zsh)"
