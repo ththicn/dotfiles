@@ -10,6 +10,8 @@ alias lal='ls --color=auto -al'
 alias lt='ls --color=auto -T'
 alias python='/opt/homebrew/bin/python3.11'
 alias cat='bat'
+alias diff='delta'
+alias cur='cursor'
 
 
 # fzf hisotory
