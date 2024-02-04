@@ -14,7 +14,7 @@ alias diff='delta'
 alias cur='cursor'
 
 
-# fzf hisotory
+# fzf hisotory テスト
 function select-history() {
   local BUFFER=$(history -n -r 1 | fzf --reverse --height=~50% --query="$LBUFFER")
   if [ -n "$BUFFER" ]; then
