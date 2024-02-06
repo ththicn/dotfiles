@@ -29,7 +29,7 @@ bindkey '^r' select-history
 function ghq-fzf() {
   local src=$(ghq list | fzf --reverse --height=~50%)
   if [ -n "$src" ]; then
-    BUFFER="cd $(ghq root)/$src"
+    BUFFER="z $(ghq root)/$src"
     zle accept-line
   fi
   zle clear-screen
@@ -66,3 +66,6 @@ if [ -f '/Users/ththicn/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/t
 
 # activate mise
 eval "$(mise activate zsh)"
+
+# activate zoxide
+eval "$(zoxide init zsh)"
