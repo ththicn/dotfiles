@@ -7,7 +7,7 @@ if wezterm.config_builder then
 end
 
 -- カラースキームの設定(おすすめはMaterialDesignColors)
-config.color_scheme = 'MaterialDesignColors'
+config.color_scheme = 'nord'
 
 -- 背景透過
 config.window_background_opacity = 0.85

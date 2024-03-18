@@ -13,7 +13,8 @@ starship_conf:
 
 .PHONY: wezterm-conf
 wezterm-conf:
-	ln -sf ${PWD}/wezterm/.wezterm.lua ${HOME}/.wezterm.lua
+	if [ ! -d ${HOME}/.config/wezterm ]; then mkdir -p ${HOME}/.config/wezterm; fi
+	ln -sf ${PWD}/wezterm/.wezterm.lua ${HOME}/.config/wezterm/wezterm.lua
 
 .PHONY: zsh-conf
 zsh-conf:
