@@ -11,6 +11,10 @@ starship_conf:
 	if [ ! -d ${HOME}/.config ]; then mkdir -p ${HOME}/.config; fi
 	ln -s -f ${PWD}/starship/starship.toml ${HOME}/.config/starship.toml
 
+.PHONY: wezterm-conf
+wezterm-conf:
+	ln -sf ${PWD}/wezterm/.wezterm.lua ${HOME}/.wezterm.lua
+
 .PHONY: zsh-conf
 zsh-conf:
 	ln -sf ${PWD}/zsh/.zshrc ${HOME}/.zshrc

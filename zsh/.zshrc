@@ -11,6 +11,7 @@ alias lt='ls --color=auto -T'
 alias cat='bat'
 alias diff='delta'
 alias cur='cursor'
+alias en='/Users/ththicn/src/github.com/ththicn/tools/llm/trans_en.sh'
 
 
 # fzf hisotory テスト
