@@ -6,8 +6,8 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
--- カラースキームの設定(おすすめはMaterialDesignColors)
-config.color_scheme = 'nord'
+-- 他の候補:nord
+config.color_scheme = 'Gruvbox Dark (Gogh)'
 
 -- 背景透過
 config.window_background_opacity = 0.85
