@@ -70,3 +70,6 @@ eval "$(mise activate zsh)"
 
 # activate zoxide
 eval "$(zoxide init zsh)"
+
+# gpg
+export GPG_TTY=$(tty)
