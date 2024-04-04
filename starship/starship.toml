@@ -1,7 +1,19 @@
+add_newline = true
+format="$username${custom.git_repo}$directory$all"
+
 [directory]
-truncation_length = 10
-truncate_to_repo = false
 home_symbol = "~"
+truncate_to_repo = false
+truncation_length = 100
+format = '[$path ]($style)[$read_only]($read_only_style)'
+repo_root_format = '[($path )]($style)[$read_only]($read_only_style)[-](black) '
+repo_root_style = 'blue'
+
+[custom.git_repo]
+when = true
+require_repo = true
+command = 'git rev-parse --show-toplevel | sed -e "s|$(ghq root)/github.com/||"'
+style = 'bold blue'
 
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
