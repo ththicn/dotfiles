@@ -21,5 +21,9 @@ zsh-conf:
 	ln -sf ${PWD}/zsh/.zshrc ${HOME}/.zshrc
 	ln -sf ${PWD}/zsh/.zprofile ${HOME}/.zprofile
 
+.PHONY: zed-conf
+zed-conf:
+	ln -sf ${PWD}/zed/settings.json ${HOME}/.config/zed/settings.json
+
 .PHONY: all
 all: brew starship_conf zsh-conf
