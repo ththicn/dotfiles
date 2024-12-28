@@ -1,3 +1,6 @@
 font-family = UDEV Gothic 35NFLG
 background-opacity = 0.80
 macos-titlebar-style = transparent
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
