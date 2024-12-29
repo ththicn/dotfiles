@@ -5,3 +5,4 @@ macos-non-native-fullscreen = true
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
+unfocused-split-fill = gray
